@@ -1,11 +1,14 @@
-// DEPENDENCIES
-const app = require("./app.js");
+const config = require("./config");
+const express = require("express");
+const routes = require("./routes");
+const cors = require("cors")
 
-// CONFIGURATION
-require("dotenv").config();
-const PORT = process.env.PORT;
+const app = express();
 
-// LISTEN
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
-});
+app.use(express.json());
+app.use(cors({origin: config.FRONT_END}))
+app.use(routes);
+
+app.listen(config.PORT, () =>
+  console.log(`app is listening on port ${config.PORT}`)
+);

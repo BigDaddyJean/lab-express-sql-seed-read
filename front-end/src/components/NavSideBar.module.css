@@ -1,0 +1,17 @@
+.list {
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
+.list li {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.list a {
+  color: darkmagenta;
+}
+
+.list a:hover {
+  color: magenta;
+}

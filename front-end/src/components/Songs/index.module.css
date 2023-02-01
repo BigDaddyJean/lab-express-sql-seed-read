@@ -1,0 +1,42 @@
+.container {
+  max-height: 60vh;
+  border-radius: 5px;
+  box-shadow: 1px 5px 15px 0px rgb(0 0 0 / 50%);
+  overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: deeppink;
+  border-radius: 5px;
+}
+
+.item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(50px, auto) 1fr 1fr auto;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: white;
+}
+
+.container > .item,
+.container > *:nth-child(odd) > .item {
+  background: darkmagenta;
+}
+
+.container > *:nth-child(even) > .item {
+  background: magenta;
+}
+
+.item > span {
+  padding: 0.5rem;
+}
+
+.item svg:hover polygon {
+  cursor: pointer;
+  fill: orange !important;
+}

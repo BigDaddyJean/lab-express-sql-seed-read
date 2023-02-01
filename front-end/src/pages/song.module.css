@@ -1,0 +1,11 @@
+.container {
+  min-width: 300px;
+  background: darkmagenta;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.container h2 {
+  margin-top: 0;
+}
