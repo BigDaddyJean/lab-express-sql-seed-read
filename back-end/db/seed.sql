@@ -1,11 +1,11 @@
 \c music
 
-INSERT INTO artist (name, age, nationality, gender, genre) VALUES
+INSERT INTO artists (name, age, nationality, gender, genre) VALUES
                    ('justin bieber', 28, 'canadian', 'male', 'pop'),
                    ('enrique iglesias', 45, 'spanish', 'male', 'pop'),
                    ('shakira', 40, 'cuban', 'female', 'pop');
 
-INSERT INTO song (name, artist, album, time, is_favorite) VALUES 
+INSERT INTO songs (name, artist, album, time, is_favorite) VALUES 
                  ('bailando', 'enrique iglesias', 'sex and love', '2014', true),
                  ('el perdedor', 'enrique iglesias', 'sex and love', '2014', true),
                  ('hero', 'enrique iglesias', 'sex and love', '2014', false),

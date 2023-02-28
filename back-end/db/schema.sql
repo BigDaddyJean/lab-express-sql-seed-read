@@ -6,7 +6,7 @@ CREATE DATABASE music;
 \c music
 -- CREATE SCHEMA tuner;
 
-CREATE TABLE song (
+CREATE TABLE songs (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   artist TEXT NOT NULL,
