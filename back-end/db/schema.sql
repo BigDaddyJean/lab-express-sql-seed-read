@@ -15,7 +15,7 @@ CREATE TABLE songs (
   is_favorite boolean
 );
 
-CREATE TABLE artist (
+CREATE TABLE artists (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   age INT NOT NULL,

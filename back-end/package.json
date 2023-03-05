@@ -7,7 +7,8 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "dbinit": "psql -U postgres -f db/schema.sql",
-    "dbseed": "psql -U postgres -f db/seed.sql"
+    "dbseed": "psql -U postgres -f db/seed.sql",
+    "test": "jest --runInBand"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,9 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-validator": "^6.14.3",
-    "pg-promise": "^11.2.0"
+    "pg-promise": "^11.2.0",
+    "jest": "^27.4.7",
+    "supertest": "^6.2.0"
+
   }
 }
